@@ -1,0 +1,36 @@
+---
+title: "Calificaciones"
+author: "Christian Nazareth Perez Castillo"
+date: "6 de febrero de 2017"
+output: html_document
+---
+
+Las Calificaciones obtenidas en los semestres se presentan a continuación:
+
+## Primer Semestre
+
+Programacion Actuarial I, Calificación: 8
+
+Intr a la Profesion Actuaria, Calificación: 6
+
+DHPC, Calificación: 7
+
+Conceptos de Calculo, Calificación: 10
+
+Matematicas Basicas, Calificación: 9
+
+Problemas de Mat. Basicas, Calificación: 9
+
+## Segundo Semestre
+
+Programacion Actuarial II, Calificación: 6
+
+Teoria del Interes I, Calificación: 6
+
+Microeconomia, Calificación: 5
+
+Calculo Diferencial, Calificación: 10
+
+Geometria Analitica, Calificación: 7
+
+Teoria de Ecuaciones, Calificación: 8
