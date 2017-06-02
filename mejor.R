@@ -15,13 +15,12 @@ mejor <- function(estado, resultado){
         Col <- 23
     }else {
         Col <-17}
-    u <- subset(outcome,outcome$State == estado)
-    uCol <- suppressWarnings(as.numeric(u[,Col]))
-    Min <- which.min(uCol)
-    uMin <- u[Min,]
-    H <- uMin[order(uMin$Hospital.Name , na.last = NA),]
-    HS <- H[1,2]
-    HS
+    uCol <- outcome[c(2,7,Col)]
+    tCol <- subset(uCol, uCol$State==estado  & !uCol[[3]]=="Not Available")
+    tColOr <- tCol[order(as.numeric(tCol[[3]]),tCol[[1]]),]
+    min <-tColOr[which.min(tColOr[[3]]),]
+    H <- min$Hospital.Name
+    H
 }
 mejor("TX", "ataque")
 mejor("TX", "falla")
@@ -29,4 +28,3 @@ mejor("MD", "ataque")
 mejor("MD", "neumonia")
 mejor("BB", "ataque")
 mejor("NY", "atakue")
-
